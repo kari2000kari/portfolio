@@ -1,0 +1,36 @@
+/* 基本スタイル */
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: blue;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  body {
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+    font-size: 18px;
+  }
+}
