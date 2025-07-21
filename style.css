@@ -1,26 +1,46 @@
-/* 基本スタイル */
+/* 全体の背景と文字 */
 body {
-  font-family: sans-serif;
-  margin: 20px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 20px;
   line-height: 1.6;
-  background-color: #f9f9f9;
 }
 
+/* タイトル中央 */
 h1 {
   font-size: 2em;
   text-align: center;
+  color: #2c3e50;
+}
+
+/* ナビゲーションリンク */
+nav {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 nav a {
-  margin: 0 10px;
+  display: inline-block;
+  margin: 0 15px;
   text-decoration: none;
-  color: blue;
+  color: #3498db;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #d6ecfa;
 }
 
 /* スマホ対応 */
 @media (max-width: 600px) {
   body {
-    margin: 10px;
+    padding: 10px;
     font-size: 16px;
   }
 
@@ -30,7 +50,7 @@ nav a {
 
   nav a {
     display: block;
-    margin: 8px 0;
+    margin: 10px auto;
     font-size: 18px;
   }
 }
