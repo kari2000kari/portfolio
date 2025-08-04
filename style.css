@@ -63,3 +63,29 @@ nav a:hover {
   margin: 20px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+.hobby-section {
+  margin: 50px 20px;
+}
+
+.hobby {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.hobby img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.hobby-text {
+  max-width: 700px;
+}
+
+.hobby-text h3 {
+  margin-top: 0;
+  color: #333;
+}
