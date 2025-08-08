@@ -89,3 +89,36 @@ nav a:hover {
   margin-top: 0;
   color: #333;
 }
+/* プロフィールカードの見た目を整える */
+.profile-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ふんわりした影 */
+  max-width: 350px; /* 横幅の最大 */
+  margin: 30px auto; /* 真ん中に配置 */
+  padding: 20px;
+  text-align: center;
+}
+
+/* 丸いプロフィール画像 */
+.profile-card .profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* 丸くする */
+  object-fit: cover;  /* 中央を切り取って表示 */
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 名前 */
+.profile-card h2 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* 紹介文 */
+.profile-card p {
+  font-size: 1em;
+  color: #555;
+}

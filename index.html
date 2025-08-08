@@ -5,18 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>カリカリのポートフォリオ</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* 背景にグラデーション */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+    }
+
+    /* カード共通スタイル */
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 20px;
+      text-align: center;
+      width: 300px;
+    }
+
+    /* プロフィール画像 */
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    /* カードの並び */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* ボタン */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      background: #3498db;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #2874a6;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>カリカリのポートフォリオ</h1>
-  <img src="profile.jpg" alt="プロフィール画像" class="profile-img" />
-  <nav>
-    <a href="index.html">ホーム</a> |
-    <a href="skills.html">資格</a> |
-    <a href="hobbies.html">趣味</a>
-  </nav>
+  <h1 style="text-align:center; color:#2c3e50;">カリカリのポートフォリオ</h1>
 
-  <p>こんにちは！大阪経済大学卒業、Webエンジニアを目指して勉強中です。</p>
+  <!-- カードを並べるコンテナ -->
+  <div class="card-container">
+
+    <!-- プロフィールカード -->
+    <div class="card">
+      <img src="profile.jpg" alt="プロフィール画像" class="profile-img" />
+      <h2>カリカリ</h2>
+      <p>大阪経済大学卒業。Webエンジニアを目指して日々勉強中。</p>
+      <a href="about.html" class="btn">詳しく見る</a>
+    </div>
+
+    <!-- スキルカード -->
+    <div class="card">
+      <h3>スキル</h3>
+      <p>HTML / CSS / JavaScript</p>
+      <p>宅地建物取引士・簿記2級</p>
+      <a href="skills.html" class="btn">スキル詳細</a>
+    </div>
+
+    <!-- 趣味カード -->
+    <div class="card">
+      <h3>趣味</h3>
+      <p>ママチャリ長距離サイクリング</p>
+      <p>筋トレ・自炊・健康管理</p>
+      <a href="hobbies.html" class="btn">趣味を見る</a>
+    </div>
+
+  </div>
 
 </body>
 </html>
