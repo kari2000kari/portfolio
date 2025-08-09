@@ -122,3 +122,23 @@ nav a:hover {
   font-size: 1em;
   color: #555;
 }
+/* カード内アイコン画像 */
+.icon-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* 丸くする */
+  object-fit: cover;  /* 画像をトリミングして丸く表示 */
+  margin: 10px auto;
+  display: block;
+}
+/* スマホ用の文字サイズ＆太さ調整 */
+@media (max-width: 600px) {
+  body {
+    font-size: 18px;         /* 全体の文字サイズを少し大きく */
+    font-weight: 500;        /* 少し太く */
+  }
+
+  p {
+    line-height: 1.8;        /* 読みやすくするため行間も広げる */
+  }
+}
